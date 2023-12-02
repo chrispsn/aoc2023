@@ -15,9 +15,7 @@ h[w]x  / part 2
 / Day 2
 
 x:0:"02.txt"
-x:x^\:",;"
-games:+(`red`green`blue#|/'=!/`I`$'+0N 2#2_" "\)'x
-
+games:+{`red`green`blue#|/'=!/`I`$'+0N 2#2_" "\x^",;"}'x
 +/1+&&/13 14 15>games  / part 1
 +/*/games              / part 2
 
