@@ -19,14 +19,9 @@ right:|'getword'(~#getword@)(1_)/'|'x
 
 x:0:"02.txt"
 x:x^\:",;"
-x:2_'" "\'x
+games:+(`red`green`blue#|/'=!/`I`$'+0N 2#2_" "\)'x
 
-games:+(`red`green`blue#|/'=!/`I`$')'+'0N 2#/:x
-
-/ part 1
-+/1+&&/13 14 15>games
-
-/ part 2
-+/*/games
++/1+&&/13 14 15>games  / part 1
++/*/games              / part 2
 
 \\
