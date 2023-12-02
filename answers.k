@@ -14,4 +14,19 @@ words:|'words
 right:|'getword'(~#getword@)(1_)/'|'x
 +/10/10!(|'words)?(left;right)
 
+
+/ Day 2
+
+x:0:"02.txt"
+x:x^\:",;"
+x:" "\'(2+x?'":")_'x
+ids:1+!#x
+games:+|/''`red`green`blue#/:='!/'{`I`$'x}'+'0N 2#/:x
+
+/ part 1
++/ids@&&/13 14 15>games
+
+/ part 2
++/*/games
+
 \\
