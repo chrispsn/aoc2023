@@ -1,18 +1,15 @@
 /  Day 1
 
 x:0:"01.txt"
+f:{x^x^1 3 4 5#\:y}                      / get matching prefix (x) - we know they are all length 1/3/4/5
+g:{*x(~#x@)(1_)/y}                       / find first matching prefix in word
+h:{+/10/10!x?(g[f x]'y;|'g[f@|'x]'|'y)}  / run matcher forwards and back, convert to numbers and sum
 
-/ part 1
-+/.'(*:;:/)@\:/:x@'&'":">x
+w:$!10
+h[w]x  / part 1
 
-/ part 2
-/ notice 'words' has an extra 1 for padding
-words:((,"")," "\"1 2 3 4 5 6 7 8 9 1 one two three four five six seven eight nine")
-getword:{*words^words^1 3 4 5#\:x}
-left:getword'(~#getword@)(1_)/'x
-words:|'words
-right:|'getword'(~#getword@)(1_)/'|'x
-+/10/10!(|'words)?(left;right)
+w,:" "\"0 one two three four five six seven eight nine"
+h[w]x  / part 2
 
 
 / Day 2
