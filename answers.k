@@ -61,7 +61,7 @@ starregions:((.symregions)@=!symregions)"*"
 
 / Day 4
 
-x:0:"05.txt"
+x:0:"04.txt"
 ixn:#'{x^x^y}/'.'?["()";1;]'(2+(*x)?":")_'`c$59&x
 
 / part 1
