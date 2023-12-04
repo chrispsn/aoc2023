@@ -29,13 +29,7 @@ games:+{`red`green`blue#|/'=!/`I`$'+0N 2#2_" "\x^",;"}'x
 / and I spent heaps of time trying to figure that out
 
 x:0:"04.txt"
-r:+|:         / 2D rotate clockwise
-rr:(4-!4)r/'  / reverse rotates
 digit:~"0:"'  / digit mask
-
-/ pad x with dots - helps with razing
-/ (ie what if two numbers got merged accidentally?)
-/x:++4(".",r@)/x
 
 symmask:~(digit x)|x="."
 symregions:(,/,/:\:/-1 0 1+/:)'+&symmask
