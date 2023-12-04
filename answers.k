@@ -22,4 +22,38 @@ games:+{`red`green`blue#|/'=!/`I`$'+0N 2#2_" "\x^",;"}'x
 +/1+&&/13 14 15>games  / part 1
 +/*/games              / part 2
 
+/ Day 3
+/ needs refinement. it turned out my p1 answer was right
+/ but an interpreter bug was giving off numbers
+/ and I spent heaps of time trying to figure that out
+
+r:+|:         / 2D rotate clockwise
+rr:(4-!4)r/'  / reverse rotates
+digit:~"0:"'  / digit mask
+
+/ pad x with dots - helps with razing
+/ (ie what if two numbers got merged accidentally?)
+/x:++4(".",r@)/x
+
+symmask:~(digit x)|x="."
+symregions:(,/,/:\:/-1 0 1+/:)'+&symmask
+
+len:#x
+symregions:(,/&'x!'symmask)!len/''symregions
+
+x:,/x
+
+numlocs:{(x@)#(&~=':x)_!#x:digit x}x
+numlocs:(.'x numlocs)!numlocs
+
+/ part 1
+/ broken due to something relating to monad' on dicts
+/ +/&~&/'^(len/',/symregions)?numlocs
+/ workaround:
++/(!numlocs)@&~&/'^(,/symregions)?.numlocs
+
+/ part 2
+starregions:*(,"*")#(.symregions)@=!symregions
++/*/+(2=#:')#(`i=@:')#'?'@[x; . numlocs; :; . !numlocs]starregions
+
 \\
