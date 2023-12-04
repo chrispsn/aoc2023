@@ -22,11 +22,13 @@ games:+{`red`green`blue#|/'=!/`I`$'+0N 2#2_" "\x^",;"}'x
 +/1+&&/13 14 15>games  / part 1
 +/*/games              / part 2
 
+
 / Day 3
 / needs refinement. it turned out my p1 answer was right
 / but an interpreter bug was giving off numbers
 / and I spent heaps of time trying to figure that out
 
+x:0:"04.txt"
 r:+|:         / 2D rotate clockwise
 rr:(4-!4)r/'  / reverse rotates
 digit:~"0:"'  / digit mask
@@ -55,5 +57,18 @@ numlocs:(.'x numlocs)!numlocs
 / part 2
 starregions:((.symregions)@=!symregions)"*"
 +/*/+(2=#:')#(`i=@:')#'?'@[x; . numlocs; :; . !numlocs]starregions
+
+
+/ Day 4
+
+x:0:"05.txt"
+ixn:#'{x^x^y}/'.'?["()";1;]'(2+(*x)?":")_'`c$59&x
+
+/ part 1
++/{(1&x)*(x-1)(2*)/1}'ixn
+
+/ part 2
+a:{(&'(-1+#x)-#'x),'x}@{(-1+#x)#~&(*x;#x)}'-1_(1_)\ixn
+(#x)+#,//.'{(,/x)#a}\a:(!#a)!1+&'a
 
 \\
