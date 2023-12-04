@@ -53,7 +53,7 @@ numlocs:(.'x numlocs)!numlocs
 +/(!numlocs)@&~&/'^(,/symregions)?.numlocs
 
 / part 2
-starregions:*(,"*")#(.symregions)@=!symregions
+starregions:((.symregions)@=!symregions)"*"
 +/*/+(2=#:')#(`i=@:')#'?'@[x; . numlocs; :; . !numlocs]starregions
 
 \\
