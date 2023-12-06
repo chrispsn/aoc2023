@@ -25,8 +25,8 @@ games:+{`red`green`blue#|/'=!/`I`$'+0N 2#2_" "\x^",;"}'x
 
 / Day 3
 / needs refinement. it turned out my p1 answer was right
-/ but an interpreter bug was giving off numbers
-/ and I spent heaps of time trying to figure that out
+/ but i misunderstood how monad'dict worked in ngn/k at the time
+/ and i spent heaps of time trying to figure out the problem
 
 x:0:"04.txt"
 digit:~"0:"'  / digit mask
