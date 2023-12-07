@@ -1,6 +1,8 @@
+/ Other good solutions
+/ rak1507    https://github.com/rak1507/aoc-2023/
+/ ovs day 1  https://github.com/Starwort/advent-of-code-golf-2023/blob/master/solutions/1/K%20(ngn/k)
+
 /  Day 1
-/ ovs expressed these ideas much better here:
-/ https://github.com/Starwort/advent-of-code-golf-2023/blob/master/solutions/1/K%20(ngn/k)
 
 x:0:"01.txt"
 f:{x^x^1 3 4 5#\:y}                      / get match from list x at front of word y, else empty. x lengths hardcoded
