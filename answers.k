@@ -87,10 +87,10 @@ x:0:"07.txt"
 (hands;bids):`c`I$'+" "\'x
 desc:{x@>x}
 freq:#'=:
-priority1:"AKQJT98765432"
-priority2:"AKQT98765432J"
+priority1:"23456789TJQKA"
+priority2:"J23456789TQKA"
 f:+/bids*1+<<+:
-f(desc'freq'hands; <>priority1?hands)
-f(@[;0;+;]'[0^(desc'freq'("J"=)_'hands)@\:!5;+/'"J"=hands]; <>priority2?hands)
+f(desc'freq'hands; priority1?hands)
+f(@[;0;+;]'[0^(desc'freq'("J"=)_'hands)@\:!5;+/'"J"=hands]; priority2?hands)
 
 \\
