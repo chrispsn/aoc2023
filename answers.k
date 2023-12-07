@@ -80,4 +80,17 @@ a:.'("9"<)_'x
 b:`I$("0:"')_'x
 +/{y<*/|:\!1+x}.b
 
+
+/ Day 7
+
+x:0:"07.txt"
+(hands;bids):`c`I$'+" "\'x
+desc:{x@>x}
+freq:#'=:
+priority1:"AKQJT98765432"
+priority2:"AKQT98765432J"
+f:+/bids*1+<<+:
+f(desc'freq'hands;<>priority1?hands)
+f(@[;0;+;]'[0^(1|#'x)#'x:desc'freq'("J"=)_'hands;+/'"J"=hands]; <>priority2?hands)
+
 \\
