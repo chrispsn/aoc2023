@@ -90,7 +90,7 @@ freq:#'=:
 priority1:"AKQJT98765432"
 priority2:"AKQT98765432J"
 f:+/bids*1+<<+:
-f(desc'freq'hands;<>priority1?hands)
+f(desc'freq'hands; <>priority1?hands)
 f(@[;0;+;]'[0^(desc'freq'("J"=)_'hands)@\:!5;+/'"J"=hands]; <>priority2?hands)
 
 \\
