@@ -69,7 +69,18 @@ a:1+(!#x)+!'ixn
 
 
 / Day 5
-/ TODO
+
+x:0:"05.txt"
+
+maps:2_x
+maps:.''-1_'1_'(&"a"<*'maps)_maps
+maps:+'({((y+0,z)';y-x)}.)''maps
+
+/ part 1
+seeds:(^:)_`I$" "\*x
+&/seeds{x-0^(:/y)((*y)@\:/:x)?'0}/maps
+
+/ part 2 TODO
 
 
 / Day 6
