@@ -106,4 +106,14 @@ f:+/bids*1+<<+:
 f(desc'freq'hands; priority1?hands)
 f(@[;0;+;]'[0^(desc'freq'("J"=)_'hands)@\:!5;+/'"J"=hands]; priority2?hands)
 
+
+/ Day 8 TODO
+
+/ Day 9
+
+x:0:"09.txt"
+seqs:(~&/~:)(1_-':)\'.'x
++/+/' :/''seqs
++/{y-x}/'|'*''seqs
+
 \\
