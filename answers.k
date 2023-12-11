@@ -153,7 +153,7 @@ f:{
  yd:(x-1)*+\~|/input
  x:(xd,/:\:yd) + .[;;:;]/[input].2#,+&1&input
  x:,'x./:+&input
- -2!+//(+/|/-:\-/)''x,/:\:x}
+ +//0|-/''x,/:\:x}  / last line optimised after looking at rak1507's solution
 
 f 2
 f 1000000
