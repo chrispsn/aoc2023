@@ -116,4 +116,29 @@ seqs:(~&/~:)(1_-':)\'.'x
 +/+/' :/''seqs
 +/{y-x}/'|'*''seqs
 
+
+/ Day 10
+
+x:{x:0:`argv 1; 1_(x?,"\\")#x}[]
+map:x
+
+start: *+&"S"=map
+movedeltas:,/-:\=2
+entrydeltas:"|-LJ7F"!((1 0;-1 0);(0 1;0 -1);(-1 0;0 1);(-1 0;0 -1);(1 0;0 -1);(1 0;0 1))
+
+firstmove:{[hereXY]
+ adj: hereXY +/: movedeltas
+ adj!: adj +/:' entrydeltas map ./: adj
+ (^adj ?\: hereXY)?0}
+
+next:{[prevXY;hereXY]
+      (,hereXY),(prevXY~/:)_hereXY +/: entrydeltas map . hereXY}
+
+path:*'(~start~ :/)(next .)\(start; firstmove start)
+
+/ part 1
+-2!#path
+
+/ part 2 TODO
+
 \\
