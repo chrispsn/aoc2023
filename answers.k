@@ -143,7 +143,6 @@ path:*'(~start~ :/)(next .)\(start; firstmove start)
 
 
 / Day 11
-/ needs cleanup for reuse
 
 x:0:"11.txt"
 input:x="#"
