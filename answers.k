@@ -141,4 +141,21 @@ path:*'(~start~ :/)(next .)\(start; firstmove start)
 
 / part 2 TODO
 
+
+/ Day 11
+/ needs cleanup for reuse
+
+x:0:"11.txt"
+f:{&1+~|/'"#"=x!x}
+x:,'+&"#"=x:+f@+f x
++//(~|\'=#x)*x:(+/|/-:\-/)''x,/:\:x
+
+x:0:"11.txt"
+n:1000000
+xd:(n-1)*+\~|/'"#"=x
+yd:(n-1)*+\~|/"#"=x
+a:((xd,/:\:yd)+.[;;:;]/[x;a;a:+&1&x])
+x:,'a./:+&x="#"
++//(~|\'=#x)*x:(+/|/-:\-/)''x,/:\:x
+
 \\
