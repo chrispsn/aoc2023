@@ -157,4 +157,18 @@ f:{
 f 2
 f 1000000
 
+
+/ Day 12
+
+x:0:"12.txt"
+x:+@[;1;.:]'" "\'x
+
+brokencounts:{x:(&~=':x)_x; (#'x)@&"#"=*'x}
+dropcandidates:{[counts;lists]{((#x)<#'y)|/'x</:0^(y:brokencounts'y)@\:!#x}[counts]_lists}
+
+/ part 1
++/({ +/y~/:brokencounts' {dropcandidates[x]@,/y,\:/:(,z;"#.")"?"=z}[y]/[,"";x] }') . x
+
+/ part 2 TODO
+
 \\
